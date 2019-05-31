@@ -1,4 +1,4 @@
-#Event Logger Front-end 
+Event Logger Front-end 
 
 Event logging interface, built with ReactJS. 
 
