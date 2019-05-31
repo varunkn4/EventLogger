@@ -1,0 +1,59 @@
+.apiTableContainer{
+    table.table{
+        padding: 2px 7px;
+        thead{
+            th{
+                padding: 2px;
+                font-weight: 100;
+                font-size: 14px;
+                font-style: italic;
+                border-top: none; 
+                border-bottom: 0.5px solid #dee2e6;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none; 
+            }
+        }        
+    }
+    .react-bs-container-body{
+        table{
+            tbody{
+                td{
+                    border-top: none; 
+                    padding: 2px 5px;
+                    font-size: 13px;
+                    &:focus{
+                        outline: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.dropup, .dropdown {
+    position: relative;
+}
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+    content: "";
+}
+
+#apiSearch{
+}

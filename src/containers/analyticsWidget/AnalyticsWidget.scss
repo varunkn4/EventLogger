@@ -1,0 +1,21 @@
+.analyticsWidgetContainer{
+    position: relative;
+    height: 92vh;
+    border: 1px solid rgb(218, 218, 218);
+    background: #F5F6FA;
+    border-radius: 5px;
+    overflow: auto;
+    margin-bottom: 5px; 
+    .widgetTitle{        
+        width: 100%;
+        padding-left: 10px; 
+        border-bottom: 1px solid rgb(236, 236, 236);
+        label{
+            color: #bbbbbb;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+    }
+}

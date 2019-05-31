@@ -1,0 +1,50 @@
+.activityWidget{
+    position: relative;
+    height: 30vh;
+    border: 1px solid #B6B6B9;
+    //background: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 3px;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 5px;
+    .widgetTitle{        
+        width: 100%;
+        padding-left: 10px;        
+        border-bottom: 1px solid rgb(205, 205, 207);        
+        background-color: #eaeaea;
+        label{
+            color: #122034;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+    }
+    .dialogBox{
+        height: 90%;
+        overflow: auto;
+    }
+    .themeSwitcher{
+        width: 30px;
+        height: 30px;        
+        background: linear-gradient(90deg, #FFFFFF 50%, #000000 50%);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    &.light{
+        background: #FFFFFF;
+        .themeSwitcher{
+            border: 2px solid #000000;
+        }
+    }
+    &.dark{
+        background: #000000;
+        .themeSwitcher{
+            border: 2px solid #FFFFFF;
+        }
+    }
+}

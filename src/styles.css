@@ -1,0 +1,606 @@
+.loginWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.loginWrapper .logoContainer {
+  background-size: cover;
+  background-blend-mode: color;
+  width: 30vw;
+  margin: auto;
+  height: 100vh;
+  padding-top: 13%;
+}
+.loginWrapper .logoContainer img {
+  width: 40%;
+}
+.loginWrapper .loginCredentials {
+  margin: auto;
+  width: 70%;
+  font-size: 16px;
+}
+.loginWrapper .loginCredentials form .form-group input {
+  color: #787878;
+  font-style: italic;
+  font-size: 14px;
+  height: 30px;
+  text-align: center;
+}
+.loginWrapper .loginCredentials form .form-group input:focus {
+  box-shadow: none;
+}
+.loginWrapper .loginCredentials form button {
+  background: #108e1b;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  padding: 0;
+  width: 100%;
+}
+.loginWrapper .loginCredentials form button:focus {
+  box-shadow: none;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+.backgroundImage img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.viewableArea .mainArea .addressBar input {
+  padding: 10px;
+}
+.viewableArea .mainArea .addressBar .MuiFormControl-marginNormal-2 {
+  margin-bottom: 3px;
+}
+.viewableArea .mainArea .sitViewer {
+  width: 100%;
+  margin-top: 16px;
+  height: 67%;
+}
+.viewableArea .mainArea .dropdown {
+  width: 100%;
+}
+.viewableArea .mainArea .logTitle {
+  margin-top: 16px;
+  background: #122034;
+  height: 55px;
+  border-radius: 5px;
+  text-align: center;
+}
+.viewableArea .mainArea .logTitle h5 {
+  color: white;
+  line-height: 2.6;
+}
+.viewableArea .mainArea .loggerWidget {
+  width: 100%;
+}
+.viewableArea .mainArea .apiWidget {
+  width: 100%;
+}
+.viewableArea .mainArea .interactionOptions {
+  width: 100%;
+}
+.viewableArea .mainArea .interactionOptions .interactionFilter {
+  border: 1px solid #cdcdcf;
+  padding: 0 5px;
+  font-size: 12px;
+  vertical-align: text-top;
+  height: 26px;
+  margin: 0;
+  width: 25%;
+}
+.viewableArea .mainArea .interactionOptions .interactionFilter:focus {
+  box-shadow: none;
+}
+.viewableArea .mainArea .interactionOptions .interactionFilter.selected {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+.collapseSection {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.windowView {
+  width: 100%;
+  height: 78vh;
+  border: 1px solid #B6B6B9;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+}
+.windowView .webContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.topbarContainer {
+  background: #122034;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.topbarContainer .logoHome {
+  color: white;
+  font-weight: bold;
+  font-family: "Indie Flower", cursive;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.topbarContainer .userAvatar {
+  height: 100%;
+  width: 30px;
+  margin: 5px 0;
+  position: relative;
+}
+.topbarContainer .userAvatar img {
+  width: 100%;
+  cursor: pointer;
+}
+.topbarContainer .mainLogo {
+  width: 150px;
+}
+.topbarContainer .mainLogo img {
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.topbarContainer .actionItems {
+  margin: 5px 30px 0 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+.topbarContainer .actionItems i {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 5px 15px 0;
+}
+
+.userMenu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+.userMenu .userOptions {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  height: 200px;
+  width: 150px;
+  background: #FFFFFF;
+  z-index: 999999;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.apiWidgetContainer {
+  position: relative;
+  height: 36vh;
+  border: 1px solid #B6B6B9;
+  background: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+.apiWidgetContainer .widgetTitle {
+  width: 100%;
+  padding-left: 10px;
+  border-bottom: 1px solid #cdcdcf;
+  background-color: #eaeaea;
+}
+.apiWidgetContainer .widgetTitle label {
+  color: #122034;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.apiWidgetContainer .widgetTitle .filterButton {
+  border: 1px solid #cdcdcf;
+  padding: 0 5px;
+  font-size: 12px;
+  vertical-align: text-top;
+  height: 20px;
+  margin: 0 10px 0 0;
+}
+.apiWidgetContainer .widgetTitle .filterButton:focus {
+  box-shadow: none;
+}
+.apiWidgetContainer .widgetTitle .filterButton.selected {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+.apiWidgetContainer .widgetTitle .filterLabel {
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+  font-style: italic;
+}
+.apiWidgetContainer .widgetTitle .intelliSearch {
+  height: 18px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 10px;
+  padding: 0 5px;
+  width: 150px;
+  vertical-align: text-bottom;
+}
+.apiWidgetContainer .widgetTitle .intelliSearch:focus {
+  outline: none;
+}
+.apiWidgetContainer .widgetTitle .dateOptions {
+  margin-right: 10px;
+  margin-top: 2px;
+}
+.apiWidgetContainer .widgetTitle .dateOptions .dateFilter {
+  min-width: 60px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 11px;
+  border: 1px solid #cdcdcf;
+}
+.apiWidgetContainer .widgetTitle .dateOptions .dateFilter:focus {
+  box-shadow: none;
+}
+.apiWidgetContainer .widgetTitle .dateOptions .dateFilter.selected {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+.apiWidgetContainer .apiWidgetTableContainer {
+  height: 90%;
+  overflow: auto;
+}
+
+.activityWidget {
+  position: relative;
+  height: 30vh;
+  border: 1px solid #B6B6B9;
+  border-radius: 5px;
+  margin-top: 3px;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.activityWidget .widgetTitle {
+  width: 100%;
+  padding-left: 10px;
+  border-bottom: 1px solid #cdcdcf;
+  background-color: #eaeaea;
+}
+.activityWidget .widgetTitle label {
+  color: #122034;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.activityWidget .dialogBox {
+  height: 90%;
+  overflow: auto;
+}
+.activityWidget .themeSwitcher {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, #FFFFFF 50%, #000000 50%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.activityWidget.light {
+  background: #FFFFFF;
+}
+.activityWidget.light .themeSwitcher {
+  border: 2px solid #000000;
+}
+.activityWidget.dark {
+  background: #000000;
+}
+.activityWidget.dark .themeSwitcher {
+  border: 2px solid #FFFFFF;
+}
+
+.dsWidgetContainer {
+  position: relative;
+  height: 22vh;
+  border: 1px solid #B6B6B9;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-right: 2px;
+  overflow: hidden;
+}
+.dsWidgetContainer .widgetTitle {
+  width: 100%;
+  padding-left: 10px;
+  border-bottom: 1px solid #cdcdcf;
+  background-color: #eaeaea;
+}
+.dsWidgetContainer .widgetTitle label {
+  color: #122034;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.dsWidgetContainer .dsData {
+  height: 90%;
+  overflow: auto;
+}
+
+.resultWidgetContainer {
+  position: relative;
+  height: 22vh;
+  border: 1px solid #B6B6B9;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-left: 2px;
+  overflow: hidden;
+}
+.resultWidgetContainer .widgetTitle {
+  width: 100%;
+  padding-left: 10px;
+  border-bottom: 1px solid #cdcdcf;
+  background-color: #eaeaea;
+}
+.resultWidgetContainer .widgetTitle label {
+  color: #122034;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.resultWidgetContainer .resultData {
+  height: 90%;
+  overflow: auto;
+}
+
+.analyticsWidgetContainer {
+  position: relative;
+  height: 92vh;
+  border: 1px solid #dadada;
+  background: #F5F6FA;
+  border-radius: 5px;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+.analyticsWidgetContainer .widgetTitle {
+  width: 100%;
+  padding-left: 10px;
+  border-bottom: 1px solid #ececec;
+}
+.analyticsWidgetContainer .widgetTitle label {
+  color: #bbbbbb;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.dialog {
+  border-radius: 5px;
+  padding: 3px 0 0 0;
+  height: auto;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dialog .dialogTimestamp {
+  font-style: italic;
+  margin-bottom: 0;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.dialog .dialogContent {
+  margin-bottom: 0;
+  text-align: justify;
+  font-size: 14px;
+}
+.dialog .dialogContent i {
+  font-size: 12px;
+  color: #3e3e3e;
+}
+.dialog .dialogID {
+  margin-left: 12px;
+  font-size: 13px;
+  font-style: italic;
+  margin-right: 10px;
+}
+.dialog .dialogSeperator {
+  font-weight: bold;
+  margin: 0 10px;
+}
+.dialog .colorIndicator {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 6px;
+}
+.dialog .contentText {
+  float: left;
+  margin-left: 10px;
+}
+.dialog.light {
+  background: inherit;
+}
+.dialog.dark {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.apiTableContainer table.table {
+  padding: 2px 7px;
+}
+.apiTableContainer table.table thead th {
+  padding: 2px;
+  font-weight: 100;
+  font-size: 14px;
+  font-style: italic;
+  border-top: none;
+  border-bottom: 0.5px solid #dee2e6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.apiTableContainer .react-bs-container-body table tbody td {
+  border-top: none;
+  padding: 2px 5px;
+  font-size: 13px;
+}
+.apiTableContainer .react-bs-container-body table tbody td:focus {
+  outline: none !important;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9 ;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.dropup, .dropdown {
+  position: relative;
+}
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9 ;
+  content: "";
+}
+
+* {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: #F5F6FA !important;
+}
+
+.centered {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: initial !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.borderless {
+  border: none !important;
+}
+
+.autoHeight {
+  height: auto !important;
+}
+
+.themeRed {
+  background-color: #F25F5C;
+}
+
+.themeYellow {
+  background-color: #FFE066;
+}
+
+.themeBlue {
+  background-color: #247BA0;
+}
+
+.themeGreen {
+  background-color: #70C1B3;
+}
+
+.mainArea {
+  height: 100vh;
+  overflow: auto;
+  padding-top: 6vh;
+  position: relative;
+  z-index: 99;
+  padding-right: 0px;
+}
+.mainArea .pageTitle .mainTitle {
+  color: #122034;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

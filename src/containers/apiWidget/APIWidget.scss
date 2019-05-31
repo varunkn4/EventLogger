@@ -1,0 +1,80 @@
+.apiWidgetContainer{
+    position: relative;
+    height: 36vh;
+    border: 1px solid #B6B6B9;
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 3px; 
+    .widgetTitle{        
+        width: 100%;
+        padding-left: 10px;        
+        border-bottom: 1px solid rgb(205, 205, 207);        
+        background-color: #eaeaea;
+        label{
+            color: #122034;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        .filterButton{
+            border: 1px solid rgb(205, 205, 207);   
+            padding: 0 5px;
+            font-size: 12px;
+            vertical-align: text-top;
+            height: 20px; 
+            margin: 0 10px 0 0;
+            &:focus{
+                box-shadow: none;
+            }
+            &.selected{
+                background-color: #6c757d;
+                border-color: #6c757d;
+                color: white;
+            }
+        }
+        .filterLabel{
+            font-weight: normal;
+            font-size: 12px;
+            margin: 0 10px 0 0;
+            font-style: italic;
+        }
+        .intelliSearch{
+            height: 18px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 20px;
+            font-size: 10px;
+            padding: 0 5px;
+            width: 150px;
+            vertical-align: text-bottom;
+            &:focus{
+                outline: none;
+            }
+        }
+        .dateOptions{
+            margin-right: 10px;
+            margin-top: 2px;
+            .dateFilter{
+                min-width: 60px;
+                height: 20px;
+                padding: 0 5px;
+                font-size: 11px;
+                border: 1px solid #cdcdcf;
+                &:focus{
+                    box-shadow: none;
+                }
+                &.selected{
+                    background-color: #6c757d;
+                    border-color: #6c757d;
+                    color: white;
+                }
+            }
+        }
+    }
+    .apiWidgetTableContainer{
+        height: 90%;
+        overflow: auto;
+    }
+}

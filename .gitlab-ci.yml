@@ -1,0 +1,89 @@
+image: docker
+services:
+    - docker:dind
+
+stages:
+    - build
+    - test
+    - deploy
+before_script:
+     - ''
+   
+build:
+    stage: build
+    only:
+        - develop
+        - master
+        - devops
+    script:
+        - npm i
+        - npm audit fix
+        - npm run build 
+    tags:
+        - devbuild
+test:
+    before_script:
+        - ''
+    stage: test
+    only:
+        - develop
+        - master
+        - devops
+    script:
+        - echo run tests 
+    tags:
+        - devbuild
+step-deploy-devops:
+    before_script:
+        - ''
+    variables:
+        tag: $CI_COMMIT_SHORT_SHA
+    stage: deploy
+    
+    only:
+        - devops
+    script:
+     - echo $tag
+     - echo $CI_COMMIT_SHORT_SHA
+     - echo $CI_BUILD_REF_NAME
+     - curl -X POST  -F token=d31729ded889835deeea1ba375329b  -F ref=devops  https://code.suyatitech.com/api/v4/projects/360/trigger/pipeline
+
+    tags:
+        - devops
+
+
+step-deploy-prod:
+    before_script:
+        - ''
+    variables:
+        tag: $CI_COMMIT_SHORT_SHA
+    stage: deploy
+    
+    only:
+        - master
+    script:
+     - echo $tag
+     - echo $CI_COMMIT_SHORT_SHA
+     - curl -X POST  -F token=d31729ded889835deeea1ba375329b  -F ref=develop  https://code.suyatitech.com/api/v4/projects/360/trigger/pipeline
+
+    environment: production
+    tags:
+        - prod
+   
+
+step-deploy-dev:
+    before_script:
+        - ''
+    stage: deploy
+    variables:
+        tag: $CI_COMMIT_SHORT_SHA
+    only:
+      - develop
+    script:
+     - echo $tag
+     - echo $CI_COMMIT_SHORT_SHA
+     - curl -X POST  -F token=d31729ded889835deeea1ba375329b  -F ref=develop  https://code.suyatitech.com/api/v4/projects/360/trigger/pipeline
+
+    environment: develop
+    tags:
+        - develop
