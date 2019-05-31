@@ -1,0 +1,68 @@
+.viewableArea{
+    .mainArea{ 
+        .addressBar{
+            input{
+                padding: 10px;
+            }
+            .MuiFormControl-marginNormal-2{
+                margin-bottom: 3px;
+            }
+        }
+        .sitViewer{
+            width: 100%;
+            margin-top: 16px;
+            height: 67%;
+        } 
+        .dropdown{
+            width: 100%;
+        }    
+        .websiteView{
+        }
+        .logTitle{
+            margin-top: 16px;
+            background: #122034;
+            height: 55px;
+            border-radius: 5px;
+            text-align: center;
+            h5{
+                color: white;
+                line-height: 2.6;
+                //font-weight: bold;
+            }
+        }
+        .loggerWidget{
+            width: 100%;
+        }
+        .apiWidget{
+            width: 100%;
+        }
+        .interactionOptions{
+            width: 100%;
+            .interactionFilter{
+                border: 1px solid rgb(205, 205, 207);   
+                padding: 0 5px;
+                font-size: 12px;
+                vertical-align: text-top;
+                height: 26px; 
+                margin: 0;
+                width: 25%;
+                &:focus{
+                    box-shadow: none;
+                }
+                &.selected{
+                    background-color: #6c757d;
+                    border-color: #6c757d;
+                    color: white;
+                }
+            }
+        }        
+    }
+}
+
+.collapseSection{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #bbbbbb;
+    cursor: pointer;
+}

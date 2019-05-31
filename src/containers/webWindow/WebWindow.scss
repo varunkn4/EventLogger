@@ -1,0 +1,12 @@
+.windowView{
+    width: 100%;
+    height: 78vh;
+    border: 1px solid #B6B6B9;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+    .webContainer{
+        width: 100%;
+        height: 100%;
+    }
+}
